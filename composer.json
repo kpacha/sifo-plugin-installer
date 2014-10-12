@@ -1,0 +1,26 @@
+{
+    "name": "kpacha/sifo-plugin-installer",
+    "description": "Simple composer plugin for installing sifo components",
+    "type": "composer-installer",
+    "license": "MIT",
+    "authors": [
+    {
+        "name": "Kpacha",
+        "email": "kpacha666@gmail.com"
+    }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "require-dev": {
+        "composer/composer": "1.0.*@dev"
+    },
+    "extra": {
+        "class": "Sifo\\Composer\\Installer"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sifo\\Composer\\": "src/"
+        }
+    }
+}
