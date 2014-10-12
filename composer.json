@@ -1,7 +1,7 @@
 {
     "name": "kpacha/sifo-plugin-installer",
     "description": "Simple composer plugin for installing sifo components",
-    "type": "composer-installer",
+    "type": "composer-plugin",
     "license": "MIT",
     "authors": [
     {
@@ -10,7 +10,7 @@
     }
     ],
     "require": {
-        "composer/installers": "~1.0"
+        "composer-plugin-api": "~1.0"
     },
     "require-dev": {
         "composer/composer": "1.0.*@dev"
