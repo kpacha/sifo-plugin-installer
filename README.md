@@ -4,7 +4,7 @@ Simple composer plugin for installing sifo components.
 
 ##Usage
 
-Just add this package to your _require_ list and define your package type.
+Just add this package to your _require_ list and define your package _type_.
 
     "type": "sifo-library",
     "require": {
