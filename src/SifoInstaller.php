@@ -9,7 +9,6 @@ class SifoInstaller extends LibraryInstaller
 {
 
     private static $allowedTypes = array(
-        'sifo-library' => 'libs/',
         'sifo-instance' => 'instances/',
     );
 
@@ -23,7 +22,9 @@ class SifoInstaller extends LibraryInstaller
         if (!$this->supports($package->getType())) {
             throw new \InvalidArgumentException("Package type [$type] is not supported");
         }
-        return self::$allowedTypes[$package->getType()] . '/' . $package->getPrettyName();
+        
+        $package_name = $package->getPrettyName();
+        return self::$allowedTypes[$package->getType()] . preg_replace('@(.*)/(.*)@', '$2', $package_name);
     }
 
 }
