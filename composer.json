@@ -1,6 +1,6 @@
 {
-    "name": "kpacha/sifo-plugin-installer",
-    "description": "Simple composer plugin for installing sifo components",
+    "name": "sifophp/sifo-instance-installer",
+    "description": "Simple composer plugin for installing sifo instances",
     "type": "composer-plugin",
     "license": "MIT",
     "authors": [
